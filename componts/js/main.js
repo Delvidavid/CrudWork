@@ -1,5 +1,6 @@
 
 
+
 const html = document.documentElement;
 const body = document.body;
 const menuLinks = document.querySelectorAll(".admin-menu a");
@@ -66,10 +67,10 @@ switchInput.addEventListener("input", function () {
   }
 });
 
-// import { Router } from "../../router/router";
+import { Router } from "../../router/router.js";
 
-// // Cargar la ruta al iniciar
-// window.addEventListener("DOMContentLoaded", Router);
+// Cargar la ruta al iniciar
+window.addEventListener("DOMContentLoaded", Router);
 
-// // Cargar la ruta al cambiar el hash
-// window.addEventListener("hashchange", Router);
+// Cargar la ruta al cambiar el hash
+window.addEventListener("hashchange", Router);

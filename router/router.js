@@ -1,13 +1,15 @@
-import { Error404 } from "../componts/view/404";
-import { Login } from "../componts/view/login";
-import { Vacancies } from "../componts/view/vacancies";
+
+import { Error404 } from "../componts/view/404.js";
+import { Candidates } from "../componts/view/candidates.js";
+import { Login } from "../componts/view/login.js";
+import { Vacancies } from "../componts/view/vacancies.js";
 
 export function Router() {
     const app = document.getElementById("app");
     const hash = window.location.hash || "#home";
 
     switch (hash) {
-        case "#home":
+        case "#login":
             app.innerHTML = Login()
             break;
         
@@ -15,10 +17,13 @@ export function Router() {
             app.innerHTML = Vacancies()
             break;
 
+        case "#candidates":
+            app.innerHTML = Candidates()
+            break;
+
         default:
             app.innerHTML = Error404()
             break;
     }
-
 
 }

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+.search-btn, button{
+  background-color: #068FFF;
+  color: #EEEEEE;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.search-btn:hover, button:hover{
+  background-color: #0682E6;
+}
+
+
+.top{
+  display: grid;
+  
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "search-field search-btn . add-emp-btn";
+}
+
+/* ----- SEARCH ----- */
+.search-field{
+  border: 1px solid #606470;
+  border-radius: 5px;
+  padding: 10px 5px;
+  grid-area: search-field;
+/*   border-right: #068FFF; */
+}
+
+.search-btn{
+  width: 100px;
+  padding: 5px 5px;
+  grid-area: search-btn;
+}
+
+.add-emp-btn{
+  grid-area: add-emp-btn;
+}
+
+/* ----- TABLE ----- */
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td{
+  padding: 5px;
+}
+
+tr:nth-child(even){
+  background-color: #F6F5F5;
+}
+
+tr:hover{
+  background-color: #E6E6E6;
+}
+
+th, td, button, input{
+  font-size: 12px;
+}
+
+button{
+    padding: 10px
+}
+
+th{
+    text-align: left;
+}
